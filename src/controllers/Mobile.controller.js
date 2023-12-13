@@ -6,12 +6,6 @@ const createmobile = async (req, res) => {
   try {
     const reqBody = req.body;
 
-    if (req.file) {
-      reqBody.mobile_imag = req.file.filename;
-    } else {
-      throw new Error("mobile image is required!") ;
-    }
-
     const createdmobile = await mobileService.createmobile(reqBody);
 
     res.status(200).json({

@@ -1,7 +1,7 @@
 const express = require("express");
 const validate = require("../../middlewares/validate");
 const mobileValidation  = require("../../validations/Mobile.validation");
-const  mobileController  = require("../../controllers/Mobile.controller");
+const mobileController  = require("../../controllers/Mobile.controller");
 
 const router = express.Router();
 
